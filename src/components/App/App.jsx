@@ -10,13 +10,11 @@ const App = () => {
    < >
    <div className={s.app}>
    <Main/>
-   <div >
-  <header>
+   <div className={s.right_inf}>
+  <header className={s.header}>
 <Link to="/skils">Skils</Link>
 <Link to="/projects">Projects</Link>
   </header>
-  
-
 <Routes>
 <Route path="/skils" element={<Skils/>}/>
 <Route path="/projects" element={<Projects/>}/>

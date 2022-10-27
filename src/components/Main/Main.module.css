@@ -13,3 +13,11 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
   z-index: 10;
 }
+.social{
+    display: flex;
+    justify-content: space-between;
+width: 80px;
+text-align: center;
+margin: 0 auto;
+
+}
