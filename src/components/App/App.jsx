@@ -2,7 +2,7 @@ import React from 'react'
 import {Route, Routes, Link} from 'react-router-dom'
 import Main from '../Main/Main'
 import Projects from '../Projects/Projects'
-import Skils from '../Skils/Skils'
+import Skills from '../Skills/Skills'
 import s from './App.module.css'
 
 const App = () => {
@@ -12,15 +12,16 @@ const App = () => {
    <Main/>
    <div className={s.right_inf}>
   <header className={s.header}>
-<Link to="/skils">Skils</Link>
+<Link to="/skills">Skills</Link>
 <Link to="/projects">Projects</Link>
   </header>
 <Routes>
-<Route path="/skils" element={<Skils/>}/>
+<Route path="/skills" element={<Skills/>}/>
 <Route path="/projects" element={<Projects/>}/>
 </Routes>
 </div>
 </div>
+
 </>
   )
 }
