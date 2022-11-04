@@ -2,7 +2,7 @@
     position: sticky;
   top: 0px;
   min-height: 100vh;
-  width: 199px;
+  width: 299px;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
   transition: width 350ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
   z-index: 10;
+  text-align: center;
 }
 .social{
     display: flex;
@@ -19,5 +20,18 @@
 width: 80px;
 text-align: center;
 margin: 0 auto;
+
+}
+
+.button_inf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn_li{
+   margin-left: 10px;
+   margin-bottom: 5px;
 
 }

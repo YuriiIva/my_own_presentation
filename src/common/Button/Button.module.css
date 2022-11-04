@@ -1,0 +1,18 @@
+.btn{
+   
+ width: 100px;
+ border-radius: 15%;
+    background-color: var(--bar-color);
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+cursor: pointer;
+border: 0;
+
+}
+.btn:focus,.btn:hover {
+    box-shadow: 0px 2px 2px -1px #000000, 1px 1px 1px 1px rgba(0,0,0,0);
+    background-color: rgb(217, 200, 16);
+}
+.btn:active{
+    box-shadow: 0px 2px 2px -1px #000000, 1px 1px 1px 1px rgba(0,0,0,0);
+    background-color: rgb(8, 145, 74);
+}
