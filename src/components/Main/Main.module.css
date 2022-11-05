@@ -20,8 +20,19 @@
 width: 80px;
 text-align: center;
 margin: 0 auto;
+margin-top: 20px;
 
 }
+
+.socal_icon{
+   size: 1em;
+   
+}
+
+.socal_icon:active, .socal_icon:hover {
+  
+    color: brown;
+ }
 
 .button_inf{
     display: flex;
