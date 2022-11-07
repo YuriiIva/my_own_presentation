@@ -1,5 +1,7 @@
 import React from 'react'
-import {Route, Routes, Link} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
+import Education from '../Education/Education'
+import Experience from '../Experience/Experience'
 import Main from '../Main/Main'
 import Projects from '../Projects/Projects'
 import Skills from '../Skills/Skills'
@@ -12,12 +14,13 @@ const App = () => {
    <Main/>
    <div className={s.right_inf}>
   <header className={s.header}>
-<Link to="/skills">Skills</Link>
-<Link to="/projects">Projects</Link>
+
   </header>
 <Routes>
 <Route path="/skills" element={<Skills/>}/>
 <Route path="/projects" element={<Projects/>}/>
+<Route path="/Education" element={<Education/>}/>
+<Route path="/Experience" element={<Experience/>}/>
 </Routes>
 </div>
 </div>

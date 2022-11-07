@@ -1,26 +1,24 @@
-import  { useState } from 'react'
+// import  { useState } from 'react'
 import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { IconContext } from "react-icons";
-import Button from '../../common/Button/Button'
+// import Button from '../../common/Button/Button'
 import s from './Main.module.css'
-import Modal from '../../common/Modal/Modal';
+// import Modal from '../../common/Modal/Modal';
+
+
+import { Link } from 'react-router-dom';
+import DownloadLink from "react-download-link";
+import File from '../../pdf/Summary.pdf'
 
 
 const Main = () => {
-const [isOpenForm, setisOpenForm] = useState(false);
 
-    const hendleOnClick=()=>{
-        setisOpenForm(true)
-       console.log('closeForm', isOpenForm)
-    }
-const closeForm=()=>{
-    setisOpenForm(false)
-}
 
   return (
-    <>
+   
     <div className={s.main}>
-       <img src="../../images/IMG_0830.jpg" alt="pic"  width={150} height={150}/>
+    
+       <img src={require('../../images/IMG_0830.jpg')}  alt="pic"   className={s.img}/>
        <h1>Ivashchenko Yurii</h1>
        <p>Front-end/Back-end Developer</p>
        <ul className={s.social}>
@@ -47,30 +45,23 @@ const closeForm=()=>{
                 </a>
         </li>
        </ul>
-       <ul className={s.button_inf}>
-        <li className={s.btn_li}>
-            <Button 
-            btn_name = 'Education'
-            hendleOnClick={hendleOnClick}
-            />
-        </li>
-        <li className={s.btn_li}>
-        <Button 
-        btn_name = 'Own projects'
-        hendleOnClick={hendleOnClick} />
-        </li>
-        <li className={s.btn_li}>
-        <Button 
-        btn_name = 'Experience'
-        hendleOnClick={hendleOnClick}/>
-        </li>
-       </ul>
-       <ul>
-        <li><a download="" href="../../images/Summary Ivashchenko Yurii.pdf">loading</a></li>
-       </ul>
+       
+       <Link to="/skills" className={s.btn_li}>Skills</Link>
+       <Link to="/projects" className={s.btn_li}>Projects</Link>
+       <Link to="/education" className={s.btn_li}>Education</Link>
+       <Link to="/experience"className={s.btn_li}>Experience</Link>
+    
+       {/* <ul>
+        <li><a href="../../pdf/Summary_Ivashchenko_Yurii.pdf" download>loading</a></li>
+       </ul> */}
+       <DownloadLink
+    label="Save me"
+    filename="Summary.pdf"
+    exportFile={() => File}
+/>
+     
         </div>
-          {  isOpenForm && <Modal closeForm={closeForm}/>}
-          </>
+         
   )
 
 }

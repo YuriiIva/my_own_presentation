@@ -42,7 +42,39 @@ margin-top: 20px;
     margin-bottom: 10px;
 }
 .btn_li{
-   margin-left: 10px;
-   margin-bottom: 5px;
+   width: 150px;
+   margin: 0 auto;
+   margin-top: 5px;
+   
+   border: 4mm ridge rgba(50, 192, 220, 0.6);
+   box-shadow: 0px 2px 2px -1px #000000, 1px 1px 1px 1px rgba(0,0,0,0);
+
+   text-transform: uppercase;
+   font-size: 15px;
 
 }
+
+.btn_li:focus,.btn_li:hover {
+    box-shadow: 0px 2px 2px -1px #000000, 1px 1px 1px 1px rgba(0,0,0,0);
+    background-color: rgb(217, 200, 16);
+}
+.btn_li:active{
+    box-shadow: 0px 2px 2px -1px #000000, 1px 1px 1px 1px rgba(0,0,0,0);
+    background-color: rgb(8, 145, 74);
+}
+
+.img{
+   
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.img:focus,.img:hover {
+border-radius: 5%;
+transition-duration: 1000ms;
+
+}
+
