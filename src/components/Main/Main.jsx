@@ -24,7 +24,7 @@ const Main = () => {
        <ul className={s.social}>
         <li>
             <a href="https://www.facebook.com/" > 
-     <IconContext.Provider value={{  className: s.socal_icon }}>
+     <IconContext.Provider value={{ size: '2em', className: s.socal_icon }}>
   <div>
     <AiFillFacebook />
   </div>
@@ -33,13 +33,13 @@ const Main = () => {
         </li>
         <li>
             <a href="https://www.linkedin.com/feed/">      
-    <IconContext.Provider value={{  className: s.socal_icon }}>
+    <IconContext.Provider value={{ size: '2em', className: s.socal_icon }}>
   <div><AiFillLinkedin /> </div>
 </IconContext.Provider>
                 </a></li>
         <li>
             <a href="https://github.com/YuriiIva">
-    <IconContext.Provider value={{  className: s.socal_icon }}>
+    <IconContext.Provider value={{ size: '2em', className: s.socal_icon }}>
   <div><AiFillGithub /></div>
 </IconContext.Provider>
                 </a>

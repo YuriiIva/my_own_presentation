@@ -74,3 +74,14 @@ a {
 button{
   width: 100px;
 }
+.icons{
+  color: rgb(20, 43, 160);
+  
+}
+.icons:hover,.icons:focus {
+  color: rgb(203, 82, 12);
+}
+
+/* .link_page:hover, .link_page:focus{
+  background-color: blue;
+} */

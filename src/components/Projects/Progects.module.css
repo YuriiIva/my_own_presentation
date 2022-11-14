@@ -7,7 +7,12 @@
    padding: 35px;
   }
 
-  .prog_item:not(:last-child){
+  .title{
+    text-align: center;
+    border: 3mm ridge rgba(28, 133, 160, 0.6);
+  }
+
+  .prog_item {
     position: relative;
     margin-bottom: 20px;
     transform: scale(1);
@@ -39,12 +44,25 @@
  border-radius: 15%;
     background-color: orange;
   }
+
+  .link:hover, .link:focus {
+        background-color: blue;
+  }
   .link_page{
     position: absolute;
     top: 50px;
     right: -30px;
     width: 25px;
     height: 25px;
+    text-align: center;
  border-radius: 15%;
     background-color: orange;
+  }
+
+  .link_page:hover, .link_page:focus{
+    background-color: blue;
+  }
+  .icons{
+    color: blue;
+    size: 2em;
   }

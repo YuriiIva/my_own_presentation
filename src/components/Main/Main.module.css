@@ -17,7 +17,7 @@
 .social{
     display: flex;
     justify-content: space-between;
-width: 80px;
+width: 100px;
 text-align: center;
 margin: 0 auto;
 margin-top: 20px;
@@ -32,6 +32,7 @@ margin-top: 20px;
 .socal_icon:active, .socal_icon:hover {
   
     color: brown;
+    background-color: blue;
  }
 
 .button_inf{
@@ -69,12 +70,16 @@ margin-top: 20px;
     width: 100px;
     height: 100px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    transform: scale(1);
+    box-shadow: 0 0 5px 10px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
 }
 .img:focus,.img:hover {
-border-radius: 5%;
-transition-duration: 1000ms;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 15px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
 }
 
 
