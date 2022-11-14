@@ -4,20 +4,47 @@
     flex-wrap: wrap;
     margin: 0 auto;
     width: 900px;
-   padding: 15px;
+   padding: 35px;
   }
 
   .prog_item:not(:last-child){
-    margin-right: 20px;
+    position: relative;
     margin-bottom: 20px;
+    transform: scale(1);
+    box-shadow: 0 0 5px 10px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
   }
+
+  .prog_item:focus, .prog_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px 15px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+    
+  }
+
   .img{
     width: 100vh;
     height: 400px;
-    border-radius: 2%; 
-    box-shadow: 10px 10px 10px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   }
-  .img:focus, .img:hover {
-    width: 150vh;
-    box-shadow: 15px 15px 15px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+ 
+  .link{
+    position: absolute;
+    right: -30px;
+    top: 20px;
+    /* bottom: 30px;
+    left: 30px; */
+    width: 25px;
+    height: 25px;
+    text-align: center;
+ border-radius: 15%;
+    background-color: orange;
+  }
+  .link_page{
+    position: absolute;
+    top: 50px;
+    right: -30px;
+    width: 25px;
+    height: 25px;
+ border-radius: 15%;
+    background-color: orange;
   }
