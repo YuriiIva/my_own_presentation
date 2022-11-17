@@ -82,6 +82,31 @@ button{
   color: rgb(203, 82, 12);
 }
 
-/* .link_page:hover, .link_page:focus{
-  background-color: blue;
-} */
+
+.imgs{
+   position: absolute;
+  border-radius: 50%;
+  
+  max-width: 100px;
+  max-height: 100px;
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  margin-top: 120px;
+  
+  cursor: pointer;
+  will-change: transform, opasity;
+}
+
+
+.front,
+.back {
+  background-size: cover;
+}
+.front{
+  background-image: url(./images/I_am.jpg);
+}
+
+.back{
+  background-image: url(./images/IMG_0830.jpg);
+}

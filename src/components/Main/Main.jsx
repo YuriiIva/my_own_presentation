@@ -1,4 +1,5 @@
-// import  { useState } from 'react'
+import  { useState } from 'react'
+import { useSpring,animated,config } from 'react-spring';
 import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { IconContext } from "react-icons";
 // import Button from '../../common/Button/Button'
@@ -11,15 +12,31 @@ import DownloadLink from "react-download-link";
 import File from '../../pdf/Summary.pdf'
 
 
-const Main = () => {
 
+const Main = () => {
+const [flipped, setFlipped] = useState(false)
+const {opacity , transform} = useSpring({
+  opacity: flipped ? 1 : 0,
+  transform: `perspective(100px) rotateX(${flipped? 180 : 0}deg)`,
+  config: config.gentle,
+})
 
   return (
    
     <div className={s.main}>
+      <div onClick={()=>setFlipped(!flipped)} className={s.anim_cont}>
+<animated.div className="imgs back" style={{
+  opacity: opacity.interpolate(o => 1 - o),
+  transform,
+}}/>
+<animated.div className="imgs front" style={{
+  opacity,
+  transform: transform.interpolate(t=>`${t} rotateX(180deg)`)
+}}/>
+      </div>
     
-       <img src={require('../../images/IMG_0830.jpg')}  alt="pic"   className={s.img}/>
-       <h1>Ivashchenko Yurii</h1>
+       {/* <img src={require('../../images/IMG_0830.jpg')}  alt="pic"   className={s.img}/> */}
+       <h1 className={s.title}>Ivashchenko Yurii</h1>
        <p>Front-end/Back-end Developer</p>
        <ul className={s.social}>
         <li>

@@ -1,10 +1,10 @@
 import React from 'react'
+import s from './Skills.module.css'
 
 const Skills = () => {
   return (
-    <div>
+    <div className={s.main}>
       <div>
-        <img src={require("../../images/IMG_0830.jpg")} alt="" width={50}/>
       <h2>TECH SKILLS</h2>
       <ul>
         <li>
@@ -43,6 +43,7 @@ const Skills = () => {
       </ul>
       </div>
 
+      <div>
       <h2>SOFT SKILLS</h2>
       <ul>
         <li>
@@ -58,6 +59,8 @@ const Skills = () => {
           <p>Attentive</p>
         </li>
       </ul>
+      </div>
+      <div>
       <h2>LANGUAGE SKILLS</h2>
       <ul>
         <li>
@@ -70,6 +73,7 @@ const Skills = () => {
           <p>Russian (Native)</p>
         </li>
       </ul>
+      </div>
     </div>
   )
 }

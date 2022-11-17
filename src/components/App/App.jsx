@@ -13,9 +13,9 @@ const App = () => {
    <div className={s.app}>
    <Main/>
    <div className={s.right_inf}>
-  <header className={s.header}>
+  {/* <header className={s.header}>
 
-  </header>
+  </header> */}
 <Routes>
 <Route path="/skills" element={<Skills/>}/>
 <Route path="/projects" element={<Projects/>}/>
