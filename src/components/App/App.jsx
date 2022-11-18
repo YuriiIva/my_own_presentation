@@ -7,10 +7,12 @@ import Projects from '../Projects/Projects'
 import Skills from '../Skills/Skills'
 import s from './App.module.css'
 
+const classs = s.app + ' ' + s.container;
+
 const App = () => {
   return (
    < >
-   <div className={s.app}>
+   <div className={classs}>
    <Main/>
    <div className={s.right_inf}>
   {/* <header className={s.header}>

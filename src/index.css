@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -71,9 +71,13 @@ a {
   margin: 0;
 }
 
+
+
 button{
   width: 100px;
 }
+
+
 .icons{
   color: rgb(20, 43, 160);
   
