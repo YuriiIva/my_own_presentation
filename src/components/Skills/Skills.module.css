@@ -1,6 +1,19 @@
 .main {
     display: flex;
     justify-content: space-between;
-    margin-right: 70px;
+    margin: 20px;
+}
+
+.title{
+   /* background-color: rgb(30, 255, 0); */
+   border: 0.5rem solid var(--green-color);
+   border-radius: 15%;
+   padding: 5px;
+   margin-bottom: 20px;
+   text-align: center;
+
+}
+
+.item{
     margin-left: 10px;
 }
