@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './Skills.module.css'
+import {languageSkills, softSkills, techSkills} from '../../data/skills'
 
 const Skills = () => {
   return (
@@ -7,6 +8,13 @@ const Skills = () => {
       <div>
       <h2>TECH SKILLS</h2>
       <ul>
+        (techSkills.map((t) => {
+         <li>
+          <p>t</p>
+         </li>}))
+      </ul>
+
+      {/* <ul>
         <li>
           <p>HTML5/CSS3/SASS</p>
         </li>
@@ -40,7 +48,7 @@ const Skills = () => {
         <li>
           <p>Netlify</p>
         </li>
-      </ul>
+      </ul> */}
       </div>
 
       <div>

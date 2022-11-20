@@ -73,7 +73,7 @@ const {opacity , transform} = useSpring({
         <li><a href="../../pdf/Summary_Ivashchenko_Yurii.pdf" download>loading</a></li>
        </ul> */}
        <DownloadLink
-    label="Save me"
+    label="Summary"
     filename="Summary.pdf"
     exportFile={() => File}
 />
