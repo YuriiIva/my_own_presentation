@@ -3,6 +3,8 @@ import { Spring, animated } from 'react-spring'
 import s from './Skills.module.css'
 import {languageSkills, softSkills, techSkills} from '../../data/skills'
 import Button from "../../common/Button/Button"
+import { AiOutlineCaretDown, AiFillCaretUp } from 'react-icons/ai';
+
 
 
 const Skills = () => {
@@ -23,11 +25,13 @@ const Skills = () => {
 
 
   return (
+    <>
     <div className={s.main}>
       <div>
       <h2 className={s.title}>TECH SKILLS</h2>
       <div className={s.btn}>
         <Button btn_name={show?"Hide":"Show"} hendleOnClick={isToggle} />
+         {!show? <AiOutlineCaretDown/>:<AiFillCaretUp/>}
       </div>
       {show && <Spring
       from={{opacity:0, transform:"translateY(-4rem)"}}
@@ -48,6 +52,7 @@ const Skills = () => {
       <h2 className={s.title}>SOFT SKILLS</h2>
       <div className={s.btn}>
          <Button btn_name={showSoft?"Hide":"Show"} hendleOnClick={isToggleSoft} />
+         {!showSoft? <AiOutlineCaretDown/>:<AiFillCaretUp/>}
       </div>
      
       {showSoft && <Spring
@@ -67,6 +72,7 @@ const Skills = () => {
       <h2 className={s.title}>LANGUAGE SKILLS</h2>
       <div className={s.btn}>
          <Button btn_name={showLan?"Hide":"Show"} hendleOnClick={isToggleLan} />
+         {!showLan? <AiOutlineCaretDown/>:<AiFillCaretUp/>}
       </div>
      
      {showLan && <Spring
@@ -82,7 +88,10 @@ const Skills = () => {
       </animated.ul>)}
       </Spring>}
       </div>
+      
     </div>
+    {show && showSoft && showLan && <img src="https://static3.depositphotos.com/1003962/196/i/450/depositphotos_1963948-stock-photo-man-and-green-check-mark.jpg" alt="ok"  className={s.img}/>}
+    </>
   )
 }
 
