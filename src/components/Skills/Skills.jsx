@@ -26,12 +26,15 @@ const Skills = () => {
 
   return (
     <>
-    <div className={s.main}>
+   
+
+    <div className={s.skills}>
+      <div className={s.main}>
       <div>
       <h2 className={s.title}>TECH SKILLS</h2>
       <div className={s.btn}>
         <Button btn_name={show?"Hide":"Show"} hendleOnClick={isToggle} />
-         {!show? <AiOutlineCaretDown/>:<AiFillCaretUp/>}
+         {!show? <AiOutlineCaretDown className={s.icon}/>:<AiFillCaretUp className={s.icon}/>}
       </div>
       {show && <Spring
       from={{opacity:0, transform:"translateY(-4rem)"}}
@@ -52,7 +55,7 @@ const Skills = () => {
       <h2 className={s.title}>SOFT SKILLS</h2>
       <div className={s.btn}>
          <Button btn_name={showSoft?"Hide":"Show"} hendleOnClick={isToggleSoft} />
-         {!showSoft? <AiOutlineCaretDown/>:<AiFillCaretUp/>}
+         {!showSoft? <AiOutlineCaretDown className={s.icon}/>:<AiFillCaretUp className={s.icon}/>}
       </div>
      
       {showSoft && <Spring
@@ -72,7 +75,7 @@ const Skills = () => {
       <h2 className={s.title}>LANGUAGE SKILLS</h2>
       <div className={s.btn}>
          <Button btn_name={showLan?"Hide":"Show"} hendleOnClick={isToggleLan} />
-         {!showLan? <AiOutlineCaretDown/>:<AiFillCaretUp/>}
+         {!showLan? <AiOutlineCaretDown className={s.icon}/>:<AiFillCaretUp className={s.icon}/>}
       </div>
      
      {showLan && <Spring
@@ -91,6 +94,9 @@ const Skills = () => {
       
     </div>
     {show && showSoft && showLan && <img src="https://static3.depositphotos.com/1003962/196/i/450/depositphotos_1963948-stock-photo-man-and-green-check-mark.jpg" alt="ok"  className={s.img}/>}
+    </div>
+    
+    
     </>
   )
 }

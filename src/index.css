@@ -1,12 +1,13 @@
 @import-normalize;
 
 :root {
-  --accent-color: rgb(92, 218, 230);
+  --accent-color: #ffff;
   --text-color: rgb(8, 3, 3);
   --red-color: rgb(177, 28, 28);
   --btn-color: rgba(0, 0, 0, 0.2);
   --green-color: rgb(5, 67, 66);
   --bar-color: rgb(140, 155, 169);
+  --border-color: rgba(50, 192, 220, 0.6);
 }
 
 body {
@@ -74,7 +75,7 @@ a {
 
 
 button{
-  width: 100px;
+  width: 110px;
 }
 
 
