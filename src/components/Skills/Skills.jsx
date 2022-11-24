@@ -64,9 +64,9 @@ const Skills = () => {
       config={{duration: 3000}}
       >
         {styles=>(<animated.ul style={styles}>
-        {softSkills.map((s) => (
-         <li key={s} className={s.item}>
-          <p> - {s}</p>
+        {softSkills.map((sof) => (
+         <li key={sof} className={s.item}>
+          <p> - {sof}</p>
          </li>))}
       </animated.ul>)}
       </Spring>}
