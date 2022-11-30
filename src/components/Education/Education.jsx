@@ -8,7 +8,7 @@ const Education = () => {
 
 const isOpen = (e)=>{
   switch (e.target.name) {
-    case "In IT":
+    case "IT":
       setIsOpenIt(!isOpenIt)
      return;
      case "General":
@@ -25,11 +25,11 @@ const isOpen = (e)=>{
    <>
     <div className={s.main}>
     <div className={s.edIT}>
-    <button type='button' className={s.btn} name="In IT" onClick={isOpen}>In IT</button>
+    <button type='button' className={s.btn} name="IT" onClick={isOpen}>IT</button>
     {isOpenIt && <h2 className={s.title}>
-      Courses
+      Courses:
       <p>
-      - GoIT Academy Bootcamp 2021:<pre>
+       GoIT Academy Bootcamp 2021:<pre>
         Full Stack Developer
         </pre>
       </p>
@@ -40,7 +40,7 @@ const isOpen = (e)=>{
        <button  type='button' className={s.btn} name="General" onClick={isOpen}>General</button>
     {isOpenGen && <h2 className={s.title}>
     Sumy State University 2003-2005: 
-    <pre>speciality -Electronic</pre>
+    <pre>Speciality - Electronic</pre>
     </h2> }
     </div>
   
