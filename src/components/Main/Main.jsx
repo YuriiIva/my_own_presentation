@@ -65,7 +65,7 @@ const {opacity , transform} = useSpring({
        <Link to="/education" className={s.btn_li}>Education</Link>
        <Link to="/experience"className={s.btn_li}>Experience</Link>
     
-       <a href="../../pdf/Summary.pdf" download>Скачать резюме</a>
+       <a href="../../pdf/Summary.pdf" download className={s.sum_link}>Скачать резюме</a>
        {/* <DownloadLink
     label="Summary"
     filename="Summary.pdf"

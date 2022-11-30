@@ -77,3 +77,14 @@ margin-top: 120px;
     align-items: center;
     justify-content: center;
 }
+.sum_link{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+
+    width: 150px;
+    border: 2mm ridge var(--border-color);
+    border-radius: 25%;
+    background-color: var(--orange-color);
+    text-transform: uppercase;
+}

@@ -21,6 +21,11 @@
  }
  .title{
     text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 600;
+box-shadow: 5px 5px 5px 0px rgb(160 216 232), inset 4px 4px 15px 0px #8f9ba8, 5px 5px 15px 5px rgba(0,0,0,0);
  }
 
  .edIT{

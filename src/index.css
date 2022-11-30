@@ -8,6 +8,7 @@
   --green-color: rgb(5, 67, 66);
   --bar-color: rgb(140, 155, 169);
   --border-color: rgba(50, 192, 220, 0.6);
+  --orange-color: rgb(203, 82, 12)
 }
 
 body {
@@ -84,7 +85,7 @@ button{
   
 }
 .icons:hover,.icons:focus {
-  color: rgb(203, 82, 12);
+  color: var(--orange-color);
 }
 
 
