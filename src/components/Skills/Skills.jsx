@@ -30,7 +30,7 @@ const Skills = () => {
 
     <div className={s.skills}>
       <div className={s.main}>
-      <div>
+      <div className={s.column}>
       <h2 className={s.title}>TECH SKILLS</h2>
       <div className={s.btn}>
         <Button btn_name={show?"Hide":"Show"} hendleOnClick={isToggle} />
@@ -51,7 +51,7 @@ const Skills = () => {
       
       </div>
 
-      <div>
+      <div className={s.column}>
       <h2 className={s.title}>SOFT SKILLS</h2>
       <div className={s.btn}>
          <Button btn_name={showSoft?"Hide":"Show"} hendleOnClick={isToggleSoft} />
@@ -71,7 +71,7 @@ const Skills = () => {
       </animated.ul>)}
       </Spring>}
       </div>
-      <div>
+      <div className={s.column}>
       <h2 className={s.title}>LANGUAGE SKILLS</h2>
       <div className={s.btn}>
          <Button btn_name={showLan?"Hide":"Show"} hendleOnClick={isToggleLan} />

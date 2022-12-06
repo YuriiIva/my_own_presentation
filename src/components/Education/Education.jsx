@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import Button from '../../common/Button/Button'
+
 import s from "./Education.module.css"
 
 const Education = () => {
@@ -18,7 +18,7 @@ const isOpen = (e)=>{
     default:
       break;
   }
-  // setIsOpenIt(!isOpenIt)
+  
 }
 
   return (
