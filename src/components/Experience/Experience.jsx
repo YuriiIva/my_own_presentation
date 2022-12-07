@@ -24,22 +24,22 @@ const closeForm=()=>{
       <ul>
         <li className={s.item}>
         
-           <a href="https://github.com/YuriiIva/snake-game-2" target="_blank" rel="noreferre" className={s.link}>
+           <a href="https://yuriiiva.github.io/snake-game-2/" target="_blank" rel="noreferre" className={s.link}>
            <img src={require("../../images/Game-Snake.png" )} alt="" className={s.img}/>
             </a>
 
         </li>
         <li className={s.item}>
         
-        <a href="https://github.com/YuriiIva/snake-game-2" target="_blank" rel="noreferre" className={s.link}>
-        <img src={require("../../images/PhoneBook.png" )} alt="" className={s.img}/>
+        <a href="https://yuriiiva.github.io/Pilpili/" target="_blank" rel="noreferre" className={s.link}>
+        <img src={require("../../images/Pilpili.png" )} alt="" className={s.img}/>
          </a>
          
      </li>
      <li className={s.item}>
         
-        <a href="https://github.com/YuriiIva/snake-game-2" target="_blank" rel="noreferre" className={s.link}>
-        <img src={require("../../images/PhoneBook.png" )} alt="" className={s.img}/>
+        <a href="https://yuriiiva.github.io/tobe/#123" target="_blank" rel="noreferre" className={s.link}>
+        <img src={require("../../images/tobe.png" )} alt="" className={s.img}/>
          </a>
          
      </li>
