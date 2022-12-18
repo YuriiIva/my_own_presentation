@@ -4,10 +4,6 @@ import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { IconContext } from "react-icons";
 import s from './Main.module.css'
 import { Link } from 'react-router-dom';
-import DownloadLink from "react-download-link";
-import File from '../../pdf/Summary.pdf'
-
-
 
 
 const Main = () => {
@@ -31,8 +27,6 @@ const {opacity , transform} = useSpring({
   transform: transform.interpolate(t=>`${t} rotateX(180deg)`)
 }}/>
       </div>
-    
-       {/* <img src={require('../../images/IMG_0830.jpg')}  alt="pic"   className={s.img}/> */}
        <h1 className={s.title}>Ivashchenko Yurii</h1>
        <p>Front-end/Back-end Developer</p>
        <ul className={s.social}>
@@ -66,11 +60,7 @@ const {opacity , transform} = useSpring({
        <Link to="/experience"className={s.btn_li}>Experience</Link>
     
        <a href="https://drive.google.com/file/d/1ACHDPBU3paemg897VYT5cAt9_CAqAVmu/view?usp=sharing" download className={s.sum_link}>Скачать резюме</a>
-       {/* <DownloadLink
-    label="Summary"
-    filename="Summary.pdf"
-    exportFile={() => File} */}
-{/* /> */}
+    
 
         </div>
          
