@@ -48,7 +48,7 @@ const closeForm=()=>{
         {isOpen && <Modal closeForm={closeForm} description={<p>
         Hello!
         I didn't work, but..
-        I have some my own projects!
+        I have some of my own projects!
         There are some of them
         </p>}/>}
       
